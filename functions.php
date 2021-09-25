@@ -17,5 +17,8 @@ require_once(_PATHTHEME."/assets/tema.header.php");
 //Tema Banner
 require_once(_PATHTHEME."/assets/tema.banner.php");
 
+//Tema Buttons
+require_once(_PATHTHEME."/assets/tema.buttons.php");
+
 
 ?>

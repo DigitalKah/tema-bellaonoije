@@ -68,6 +68,7 @@ $logo_header = get_theme_mod( 'header-logo' );
       
         <?php wptutsplus_home_page_banner('top'); ?>
       
+        <?php get_action_buttons('top')?>
         
       </section>
     <?php } ?>
