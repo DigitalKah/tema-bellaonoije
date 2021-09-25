@@ -63,3 +63,11 @@ $logo_header = get_theme_mod( 'header-logo' );
     <!-- - - - - - - - - - - - - - end Header - - - - - - - - - - - - - - - - -->
 
     <!-- - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - -->    
+    <?php if ( is_front_page() ) { ?>
+      <section class="home__banner--top"> 
+      
+        <?php wptutsplus_home_page_banner('top'); ?>
+      
+        
+      </section>
+    <?php } ?>
