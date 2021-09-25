@@ -4,7 +4,8 @@ the_post();
 
 get_header();
 
-?>
+if ( is_front_page() ) { ?>
+
   <section class="home__box-features">
     <div class="container">
       <div class="box-features__content text-center">
@@ -91,5 +92,20 @@ get_header();
     <?php get_action_buttons('bottom')?>
       
   </section>
-<?php 
+<?php } else { ?>
+    <div class="post__content">
+    <div class="container">
+      <div class="row m-auto py-5">
+        <div class="col-lg-4">
+          <img src="<?php the_field('post_imagem') ?>" alt="<?php the_field('post_imagem_alt') ?>">
+        </div>
+        <div class="col-lg-8">
+          <h1 class="text-dark"><?php the_title() ?></h1>
+          <?php the_content(); ?>
+          <h4><?php echo get_the_excerpt()?></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php }
 get_footer();
