@@ -389,3 +389,18 @@ footer a {
     }
   }
 }
+
+/*Footer*/
+.footer__logo img {
+  max-width: 246px;
+  margin: 1rem;
+}
+.footer__copy p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+  margin-bottom: 0;
+	color: $gray;
+}
