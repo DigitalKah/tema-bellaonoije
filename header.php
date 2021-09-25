@@ -15,7 +15,7 @@ $logo_header = get_theme_mod( 'header-logo' );
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
 		<meta charset="utf-8">
-		<title><?php bloginfo('name');?></title>
+		<title><?php bloginfo('name');?> | <?php the_title()?></title>
 		
     <meta name="description" content="Food app Bella Onojie">
 		<meta property="og:type" content="website"/>
