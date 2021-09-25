@@ -48,7 +48,7 @@ if ( is_front_page() ) { ?>
             <div class="<?php echo $b_classe . ' col-lg-5 mobile___order--2' ?>">
               <div class="post-features__img text-center py-4">
                 <a href="<?php echo get_permalink() ?>">
-                  <img src="<?php the_field('post_imagem') ?>" alt="">
+                  <img src="<?php the_field('post_imagem') ?>" alt="<?php the_field('post_imagem_alt')?>">
                 </a>              
               </div>
             </div>
