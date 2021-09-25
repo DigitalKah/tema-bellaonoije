@@ -272,3 +272,120 @@ footer a {
       margin-left: -30px;   
   }
 }
+
+/*Home Page Content*/
+.divider{
+  width: 100%;
+	max-width: 884px;
+	height: 0px;
+	border: 3px solid $light;
+}
+@media (max-width: $breakpoint){
+  .divider{
+    max-width: 98%;
+  }
+}
+.page-content__title{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: .8;
+	letter-spacing: 0.1px;
+	color: $black;
+	opacity: 0.8;
+  text-align: center;
+  margin: 4rem auto;
+}
+@media (max-width: $breakpoint){
+  .page-content__title {
+    font-family: $family;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 4rem auto;
+  }
+}
+
+.content__post-features{
+  & .order--1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  & .order--2{
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  } 
+  & .order--3{
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  & h3{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    color: $primary;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+  }
+  & h3:hover{
+    color:$gray;
+  }
+  & h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.42;
+    letter-spacing: 0.2px;
+    color: $dark_blue;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+  }
+  & h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.58;
+    letter-spacing: 0.2px;
+    color: $gray;
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+  }
+  & h2:hover,
+  & h4:hover{
+    color: $primary;
+  }
+  & img{
+    max-width: 100%;
+    -webkit-filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+  }
+}
+@media (max-width: $breakpoint){
+  .content__post-features{
+    & .mobile___order--1{
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+    & .mobile___order--2{
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+    }
+    &  h3 {
+      margin: 2rem auto;
+    }
+    & h2{
+      margin-bottom:2rem;
+    }
+    & h4{
+      color:$secondary;
+      margin: 1rem auto 2rem auto;
+    }
+  }
+}
