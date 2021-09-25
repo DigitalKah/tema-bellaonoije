@@ -127,3 +127,24 @@ footer a {
     color: #737373;
   }
 }
+/*Banner Bottom*/
+.home__banner--bottom {
+  margin-top: 6rem;
+}
+.home__banner--bottom .text-content h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.42;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  margin: 80px auto 30px auto;
+}
+.home__banner--bottom .text-content h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.58;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
